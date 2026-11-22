@@ -1,0 +1,4 @@
+pytest
+pyyaml
+tree-sitter
+tree-sitter-javascript

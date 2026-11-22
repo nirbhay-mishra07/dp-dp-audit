@@ -1,0 +1,27 @@
+{
+  "max_file_size": 1000000,
+  "excluded_directories": [".git", "node_modules", "venv", ".venv", "__pycache__", "build", "dist", ".mypy_cache", ".pytest_cache", "coverage", "target", "vendor"],
+  "controls": {
+    "DPDP-01": {"title": "Potential personal-data field or identifier detected", "patterns": ["\\b(?:full_?name|first_?name|last_?name|display_?name|name|username|email|phone(?:_?number)?|telephone|contact_?number|mobile|street_?address|postal_?address|address|client_?ip|remote_?addr|request_?ip|ip_?address|user_?id|date_?of_?birth)\\b"]},
+    "DPDP-02": {"title": "Processing basis evidence detected", "patterns": ["\\b(?:lawful[ _]basis|processing[ _]basis|legal[ _]basis|consent_basis|legitimate_use|section\\s+7|certain legitimate uses?|lawful grounds?)\\b", "consent\\s+(?:is|as)\\s+(?:the\\s+)?(?:lawful\\s+)?(?:basis|ground)"]},
+    "DPDP-03": {
+      "title": "Privacy notice evidence detected",
+      "patterns": ["privacy notice", "privacy policy", "data protection notice", "\\bprivacy(?:Notice|Policy|Statement)\\b", "/privacy"],
+      "notice_topics": {
+        "personal_data": ["personal data", "itemised description", "categories of data"],
+        "purpose": ["\\bpurposes?\\b", "why we use", "processing purpose"],
+        "withdrawal": ["withdraw(?:al)? consent", "withdraw consent", "opt.?out"],
+        "rights": ["exercise.*rights", "access request", "correction", "erasure"],
+        "grievance": ["grievance", "complaint"],
+        "contact": ["contact information", "privacy officer", "data protection officer", "contact us"]
+      }
+    },
+    "DPDP-04": {"title": "Consent mechanism evidence detected", "patterns": ["\\b(?:grant_?consent|record_?consent|consent_?(?:manager|checkbox|form|choice|status|given|handler)|opt_?in|optin|checkbox|defaultChecked)\\b", "type\\s*=\\s*[\\\"']checkbox"]},
+    "DPDP-05": {"title": "Purpose documentation evidence detected", "patterns": ["\\b(?:purpose|processing_purpose|use_purpose|data_usage)\\b"]},
+    "DPDP-06": {"title": "Data minimization evidence detected", "patterns": ["\\b(?:data_minimi[sz]ation|minimum required|minimum_required(?:_fields)?|minimal_data|collect_only(?:_required_data)?)\\b"]},
+    "DPDP-07": {"title": "Consent withdrawal evidence detected", "patterns": ["\\b(?:withdraw(?:al)?_?consent|revoke_?consent|unsubscribe|opt_out|withdrawConsent)\\b"]},
+    "DPDP-08": {"title": "Data access request evidence detected", "patterns": ["\\b(?:data_?access_?request|access_?personal_?data|access request|right to access|export_?user_?data|subject_?access)\\b"]},
+    "DPDP-09": {"title": "Correction or erasure evidence detected", "patterns": ["\\b(?:correct_?(?:personal_?data|profile)|update_?personal_?data|delete_(?:account|user)|remove_(?:user|profile)|erase_?(?:data|personal_?data)|right_to_erasure|deleteUser)\\b", "\\bdelete\\s+from\\s+(?:users|user_data|personal_data|accounts)\\b"]},
+    "DPDP-10": {"title": "Grievance or nomination evidence detected", "patterns": ["\\b(?:grievance(?:_officer(?:_contact)?)?|complaint|nominee|nomination|privacy_contact)\\b"]}
+  }
+}

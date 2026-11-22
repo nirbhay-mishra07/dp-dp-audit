@@ -1,0 +1,51 @@
+controls:
+  - id: DPDP-01
+    title: Personal data discovery
+    description: Identify personal data handled by the target codebase.
+    legal_ref: "DPDP Act, 2023, Sections 3, 4 and 8"
+    effective_date: "2027-05-13"
+  - id: DPDP-02
+    title: Lawful basis
+    description: Identify evidence of a lawful basis for personal data processing.
+    legal_ref: "DPDP Act, 2023, Sections 4 and 7"
+    effective_date: "2027-05-13"
+  - id: DPDP-03
+    title: Privacy notices
+    description: Identify evidence of privacy notices.
+    legal_ref: "DPDP Act, 2023, Section 5; DPDP Rules, 2025, Rule 3"
+    effective_date: "2027-05-13"
+  - id: DPDP-04
+    title: Valid consent
+    description: Identify evidence related to valid consent.
+    legal_ref: "DPDP Act, 2023, Section 6; DPDP Rules, 2025, Rule 3"
+    effective_date: "2027-05-13"
+  - id: DPDP-05
+    title: Purpose limitation
+    description: Identify evidence of purpose limitation.
+    legal_ref: "DPDP Act, 2023, Sections 4 and 5; DPDP Rules, 2025, Rule 3"
+    effective_date: "2027-05-13"
+  - id: DPDP-06
+    title: Data minimization
+    description: Identify evidence of data minimization.
+    legal_ref: "DPDP Act, 2023, Sections 6(1) and 8; DPDP Rules, 2025, Rule 3(b)"
+    effective_date: "2027-05-13"
+  - id: DPDP-07
+    title: Consent withdrawal
+    description: Identify evidence for consent withdrawal.
+    legal_ref: "DPDP Act, 2023, Section 6(4) and 6(6); DPDP Rules, 2025, Rule 3(c)(i)"
+    effective_date: "2027-05-13"
+  - id: DPDP-08
+    title: Right of access
+    description: Identify evidence for data principal access requests.
+    legal_ref: "DPDP Act, 2023, Section 11; DPDP Rules, 2025, Rule 14"
+    effective_date: "2027-05-13"
+  - id: DPDP-09
+    title: Correction and erasure
+    description: Identify evidence for correction and erasure requests.
+    legal_ref: "DPDP Act, 2023, Section 12; DPDP Rules, 2025, Rule 14"
+    effective_date: "2027-05-13"
+  - id: DPDP-10
+    title: Grievance and nomination
+    description: Identify evidence for grievance redressal and nomination.
+    legal_ref: "DPDP Act, 2023, Sections 13 and 14; DPDP Rules, 2025, Rule 14(3) and (4)"
+    effective_date: "2027-05-13"
